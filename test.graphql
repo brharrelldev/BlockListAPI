@@ -1,0 +1,17 @@
+#query GetIpDetail{
+#    GetIpDetails(ip: "0.0.0.0"){
+#        id
+#        response
+#        created_at
+#        updated_at
+#        response_code
+#        ip_address
+#    }
+#}
+
+mutation{
+    enqueue(ips: ["104.218.235.41", "50.7.10.170"]){
+        ip
+        message
+    }
+}

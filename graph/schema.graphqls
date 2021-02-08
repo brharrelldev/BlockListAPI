@@ -1,0 +1,26 @@
+
+
+type IpAddress {
+  id: String!
+  response: String!
+  ip_address: String!
+  response_code: String!
+  created_at: String!
+  updated_at: String!
+}
+
+type Status{
+  ip: String!
+  message: String!
+}
+
+
+
+type Query {
+  GetIpDetails(ip: String!): IpAddress!
+}
+
+
+type Mutation {
+  enqueue(ips: [String]): [Status]
+}
