@@ -38,7 +38,15 @@ export DB_PATH=<path to backend database>
 export PORT=<port service runs on>
 ```
 
-Docker Image can be
+Docker images can be build via the following command:
+
+```bash 
+make docker-build-and-publish
+```
+
+This will build and push docker image to your desired repo
+
+
 
 
 

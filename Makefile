@@ -30,3 +30,5 @@ build-docker-image:
 
 publish-docker-image:
 	docker push $(DOMAIN)/$(NAMESPACE)/${BINARY_NAME}:$(VERSION)
+
+docker-build-and-push: build-docker-image publish-docker-image
