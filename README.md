@@ -30,11 +30,14 @@ bin/blocklist-cli
 
 The 5 environment variables you can export are:
 
+```bash
 export BLOCKLIST_USER=<blocklist_user>
 export BLOCKLIST_PASS=<bloocklist_pass>
 export DB_CACHE=<badger db cache for token storage>
 export DB_PATH=<path to backend database>
 export PORT=<port service runs on>
+```
+
 
 
 ## Dependencies
