@@ -27,3 +27,6 @@ build-docker-image:
 		--build-arg BLOCKLIST_USER=$(BLOCKLIST_USER) \
 		--build-arg BLOCKLIST_PASS=$(BLOCKLIST_PASS) \
 		--build-arg DB_PATH=$(DB_PATH) .
+
+publish-docker-image:
+	docker push $(DOMAIN)/$(NAMESPACE)/${BINARY_NAME}:$(VERSION)

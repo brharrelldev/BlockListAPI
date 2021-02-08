@@ -38,6 +38,8 @@ export DB_PATH=<path to backend database>
 export PORT=<port service runs on>
 ```
 
+Docker Image can be
+
 
 
 ## Dependencies
@@ -49,5 +51,8 @@ Below is a list of depdencies
 |badger    | kv store used to store token|
 |gqlgen    | used to build graphql server in Go|
 |mux       | for routing and auth middleware|
+| mattn    | used as driver for sqlite3 db
+
+
 
 
