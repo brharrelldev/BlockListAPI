@@ -59,7 +59,8 @@ Below is a list of depdencies
 |badger    | kv store used to store token|
 |gqlgen    | used to build graphql server in Go|
 |mux       | for routing and auth middleware|
-| mattn    | used as driver for sqlite3 db
+| mattn    | used as driver for sqlite3 db |
+|urfavcli | cli library, convienient for passing env variables to program |
 
 
 
