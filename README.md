@@ -50,7 +50,7 @@ This will build and push docker image to your desired repo
 
 
 
-## Dependencies
+### Dependencies
 
 Below is a list of depdencies
 
