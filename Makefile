@@ -1,9 +1,10 @@
 VERSION = $(shell cat version.txt)
-CACHE_PATH = "cache"
-BLOCKLIST_USER = "test"
-BLOCK_LIST_PASSWORD = "test"
+CACHE_PATH = cache
+BLOCKLIST_USER = test
+BLOCKLIST_PASS = test
 DB_PATH = data/blocklist.db
 BINARY_NAME = blocklist-cli
+PORT = 3000
 BIN_PATH = "bin/$(BINARY_NAME)"
 DOMAIN=gcr.io
 NAMESPACE=securework_homework

@@ -2,7 +2,7 @@ package auth
 
 import (
 	"fmt"
-	"github.com/dgraph-io/badger/v3"
+	"github.com/dgraph-io/badger/v2"
 	"net/http"
 )
 
@@ -35,7 +35,7 @@ func Authorize(db *badger.DB) func(next http.Handler) http.Handler {
 				return
 			}
 
-			if request.Header.Get("authorization") != string(res){
+			if request.Header.Get("Authorization") != string(res){
 				http.Error(writer, "invalid credentials", http.StatusForbidden)
 				return
 			}
